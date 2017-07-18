@@ -150,7 +150,7 @@ def channel_results(reduced_data, outliers, pca_samples):
 	labels = ['Hotel/Restaurant/Cafe', 'Retailer']
 	grouped = labeled.groupby('Channel')
 	for i, channel in grouped:   
-	    channel.plot(ax = ax, kind = 'scatter', x = 'Dimension 1', y = 'Dimension 2', \
+	    channel.plot(ax = ax, kind = 'scatter', x = 'Dimension 2', y = 'Dimension 1', \
 	                 color = cmap((i-1)*1.0/2), label = labels[i-1], s=30);
 	    
 	# Plot transformed sample points   
